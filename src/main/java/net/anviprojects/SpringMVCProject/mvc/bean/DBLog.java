@@ -25,7 +25,6 @@ public class DBLog implements Serializable{
 		return IDLOG;
 	}
 
-	@XmlElement
 	public void setIDLOG(int IDLOG) {
 		this.IDLOG = IDLOG;
 	}
@@ -34,7 +33,6 @@ public class DBLog implements Serializable{
 		return LOGSTRING;
 	}
 
-	@XmlElement
 	public void setLOGSTRING(String LOGSTRING) {
 		this.LOGSTRING = LOGSTRING;
 	}

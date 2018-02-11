@@ -1,11 +1,13 @@
 package net.anviprojects.SpringMVCProject.mvc.excelpdf;
 
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.hssf.util.HSSFColor;
 import org.apache.poi.ss.usermodel.CellStyle;
 import org.apache.poi.ss.usermodel.Font;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
+import org.springframework.web.servlet.view.document.AbstractExcelView;
 import org.springframework.web.servlet.view.document.AbstractXlsxView;
 
 import javax.servlet.http.HttpServletRequest;
@@ -16,9 +18,9 @@ import java.util.Map;
 /**
  *  Представление для excel документов
  */
-public class ExcelDocument extends AbstractXlsxView {
+public class ExcelDocument extends AbstractExcelView {
 	@Override
-	protected void buildExcelDocument(Map<String, Object> model, Workbook workbook, HttpServletRequest request, HttpServletResponse response) throws Exception {
+	protected void buildExcelDocument(Map<String, Object> model, HSSFWorkbook workbook, HttpServletRequest request, HttpServletResponse response) throws Exception {
 		// новая книга
 		Sheet excelSheet = workbook.createSheet("Simple excel example");
 

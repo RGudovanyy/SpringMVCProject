@@ -113,7 +113,7 @@
 				<configuration>
 					<source>1.8</source>
 					<target>1.8</target>
-					<compilerArgument>Xlint:all</compilerArgument>
+					<compilerArgument>-Xlint:all</compilerArgument>
 					<showWarnings>true</showWarnings>
 					<showDeprecation>true</showDeprecation>
 				</configuration>
@@ -123,9 +123,9 @@
 				<artifactId>tomcat7-maven-plugin</artifactId>
 				<version>2.2</version>
 				<configuration>
+					<server>apache-tomcat</server>
 					<url>http://localhost:8080/manager/text</url>
-					<username>tomcat</username>
-					<password>passwd</password>
+					<path>/SpringMVCProject</path>
 				</configuration>
 			</plugin>
 		</plugins>

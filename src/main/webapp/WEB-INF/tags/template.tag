@@ -65,8 +65,9 @@
                         <li>
                             <a href="${email}">Отправка письма через Spring Mail API</a>
                         </li>
+                        <c:url value="/orm.html" var="orm"/>
                         <li>
-                            <a href="portfolio-4-col.html">Lesson 5</a>
+                            <a href="${orm}">Работа с ORM Hibernate</a>
                         </li>
                         <li>
                             <a href="portfolio-item.html">Lesson 5</a>

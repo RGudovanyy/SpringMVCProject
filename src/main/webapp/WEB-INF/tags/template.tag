@@ -69,8 +69,9 @@
                         <li>
                             <a href="${orm}">Работа с ORM Hibernate</a>
                         </li>
+                        <c:url value="/runtimeException.html" var="runtimeException"/>
                         <li>
-                            <a href="portfolio-item.html">Lesson 5</a>
+                            <a href="${runtimeException}">Exception</a>
                         </li>
                     </ul>
                 </li>

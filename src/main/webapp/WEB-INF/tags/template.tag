@@ -73,6 +73,11 @@
                         <li>
                             <a href="${runtimeException}">Exception</a>
                         </li>
+                        <c:url value="/jstl.html" var="jstl"/>
+                        <li>
+                            <a href="${jstl}">JSTL</a>
+                        </li>
+
                     </ul>
                 </li>
             </ul>

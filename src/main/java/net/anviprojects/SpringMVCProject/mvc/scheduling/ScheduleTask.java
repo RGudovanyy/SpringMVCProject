@@ -8,13 +8,13 @@ import java.util.Date;
 @Component
 public class ScheduleTask {
 
-    @Scheduled(fixedDelay = 10000)
+    @Scheduled(fixedDelay = 100000)
     public void fixedDelaySchedule(){
         System.out.println("fixedDelaySchedule every 10 seconds " + new Date());
     }
 
     //every 30 seconds (seconds, minutes, hours, day of month, month, day of week, year(optional))
-    @Scheduled(cron = "0/30 * * * * ?")
+    @Scheduled(cron = "0/300 * * * * ?")
     public void cronSchedule(){
         System.out.println("cronSchedule every 30 seconds " + new Date());
 

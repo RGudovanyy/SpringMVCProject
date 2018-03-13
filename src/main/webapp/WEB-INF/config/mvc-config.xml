@@ -58,4 +58,13 @@
     <mvc:view-controller path="/orm.html" view-name="/orm/orm"/>
     <mvc:view-controller path="/jstl.html" view-name="/jstl/jstl"/>
 
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/interceptorCall/*"/>
+            <!-- Need to use '/**' not '/*' if you want to intercept all requests-->
+            <!--<mvc:mapping path="/**"/>-->
+            <bean class="net.anviprojects.SpringMVCProject.mvc.interceptors.SiteInterceptor"/>
+        </mvc:interceptor>
+    </mvc:interceptors>
+    
 </beans>

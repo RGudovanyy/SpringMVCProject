@@ -77,7 +77,18 @@
                         <li>
                             <a href="${jstl}">JSTL</a>
                         </li>
-
+                        <c:url value="/redirectExample" var="redirectExample"/>
+                        <li>
+                            <a href="${redirectExample}">Redirect Example</a>
+                        </li>
+                        <c:url value="/scope.html" var="scope"/>
+                        <li>
+                            <a href="${scope}">Session Object Example</a>
+                        </li>
+                        <c:url value="/cookie.html" var="cookieView" />
+                        <li>
+                            <a href="${cookieView}">Cookie Example</a>
+                        </li>
                     </ul>
                 </li>
             </ul>
